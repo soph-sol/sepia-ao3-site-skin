@@ -1,0 +1,716 @@
+/* HOMEPAGE SPLASH */
+
+.splash .module h3 {
+    color: #5C3317 ;
+    font-variant: serif;
+}
+
+.splash .favorite li:nth-of-type(odd) a {
+    background: none;
+}
+
+/* POPUP DIALOGUE BOXES */
+
+#modal {
+    border: 5px solid #5C3317 ;
+    background: #FFEBCD ;
+    color: #76826c ;
+        /* what's this for, tell me more, I can't recall how to get a dialogue box to happen to me so I can see what it does */
+}
+
+#modal .footer .action.modal-closer {
+    background: #5C3317 ;
+    color: #FFEBCD  ;
+    border: 2px solid #5C3317 ;
+    box-shadow: none;
+}
+
+/* INBOX */
+
+/* just fixing the colours and stuff! */
+
+.unread,
+.thread .even,
+.statistics .index li:nth-of-type(2n) {
+    background: #94a189 ;
+}
+
+span.unread {
+    background: #FFEBCD;
+    color: #5C3317;
+    border: 2px solid #5C3317;
+}
+
+/* HEADER */
+
+#header .menu li {
+    border-bottom: none;
+}
+
+/* AO3 LOGO BAR */
+
+#header .heading a {
+    padding-left: 0.5em;
+    font-variant: serif;
+    color: #990000;
+}
+
+/* GREETING MENUS */
+/* this is the stuff at the top right of every page, with your logo and post new and log out */
+
+
+#greeting .icon img {
+    box-shadow: none;
+    border: 2px solid #5C3317;
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#header .user a {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 0;
+}
+
+#greeting .dropdown .menu a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#greeting li a {
+    font-variant: serif;
+    color: #5C3317 !important;
+    background: #FFEBCD ;
+    border: 2px solid #5C3317 ;
+    box-shadow: none;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+#greeting .dropdown .menu {
+    background: #C9AE90 !important;
+    border-radius: 5px;
+}
+
+#greeting .dropdown .menu a,
+#greeting li a:hover {
+    background: #94a189 !important;
+    color: #FFEBCD !important;
+    border-radius: 5px;
+}
+
+#greeting .dropdown .menu a:hover,
+a.tag:hover {
+    font-variant: serif;
+    color: #C9AE90 !important;
+    background: #5C3317  !important;
+    border: 2px solid #5C3317 ;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+#greeting .menu {
+    width: 12em;
+}
+
+/* HEADER BAR MENUS */
+/* this is for the bar below the AO3 logo, with all the navigation menus */
+
+
+#header .primary {
+    background: #94a189 ;
+    border-bottom: 5px solid #5C3317 ;
+    border-top: 5px solid #5C3317 ;
+    box-shadow: none;
+    padding: 5px;
+}
+
+#header #search {
+    display: none;
+}
+
+#header a {
+    font-size: 110%;
+}
+
+#header .menu {
+    background: #C9AE90 ;
+    box-shadow: none;
+    width: 20em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#header .primary li a {
+    font-variant: serif;
+    color: #C9AE90 !important;
+    background: #5C3317 ;
+    border: 2px solid #94a189 ;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+#header .dropdown .menu li:hover a {
+    font-variant: serif;
+    color: #C9AE90 !important;
+    background: #5C3317 ;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+#header .dropdown:hover a {
+    background: #94a189 ;
+    color: #FFEBCD !important;
+    border: 2px solid #5C3317 !important;
+    border-radius: 5px;
+}
+
+/* menu font for all menus */
+
+.dropdown {
+    font-family: serif;
+}
+
+/* page wrapper - the background background of pages */
+
+#outer.wrapper {
+    background: #FFEBCD ;
+}
+
+/* NOTICES AND ERRORS */
+
+p.notice,
+p.note,
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash {
+    background: #94a189 ;
+    border: #94a189 ;
+    color: #111;
+}
+
+/* DASHBOARD */
+/* this is the set of menus on the left-hand side of the screen when you're on your user page */
+
+/* whether the dashboard link has been visited or not, it will always have this colour scheme and font */
+#dashboard .actions a,
+#dashboard .actions a:visited {
+    background: #FFEBCD ;
+    border: 1px solid #5C3317 ;
+    color: #5C3317 !important;
+    font-variant: serif;
+}
+
+/* whichever dashboard link you are currently at, it will have this colour scheme and font instead of the standard */
+.current,
+#dashboard .current,
+#main .current {
+    background: #94a189 ;
+    color: #FFEBCD ;
+    font-variant: serif;
+    border: 2px solid #5C3317 ;
+}
+
+/* if you're hovering over a dashboard link it'll look like this */
+#dashboard .actions a:hover,
+#dashboard .actions a:focus {
+    box-shadow: none;
+    text-shadow: none;
+    border: 2px solid #5C3317 ;
+    background: #FFEBCD ;
+    color: #5C3317 ;
+    font-weight: bold;
+}
+
+/* dashboard decoration */
+
+#dashboard.own,
+#dashboard ul {
+    background: #EDD7B9 ;
+    border-radius: 5px;
+}
+
+#dashboard ul {
+    border: none;
+}
+
+#dashboard.own {
+    border: 2px solid #5C3317 ;
+}
+
+/* BUTTONS */
+/* input is a type of button and a type of field, and textarea is a place where you can input text content. approximately. */
+
+.actions a,
+.action,
+input[type="file"],
+.actions input,
+input[type="submit"],
+button,
+.actions label,
+#main .actions a,
+#main .actions a:visited,
+#main .action,
+#main .actions input,
+#main input[type="submit"],
+#main button,
+#main .actions label {
+    background: #AE8F72 ;
+    font-variant: serif;
+    color: #FFEBCD;
+    border: 2px solid #5C3317 ;
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+    padding-left: 0.3em
+}
+
+/* fix font in tags and in some buttons */
+body {
+    font-family: serif;
+    font-size: 120%;
+}
+
+/* fix font in other buttons */
+input {
+    font-family: serif;
+    padding: 5px;
+    background: #FFF1DC ;
+}
+
+/* if you're hovering over a button link, it'll look like this instead of the standard */
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+#main .actions a:hover,
+#main input[type="submit"]:hover,
+#main button:hover .actions label:hover,
+#main .action:hover {
+    box-shadow: none;
+    text-shadow: none;
+    background: #FFEBCD ;
+    color: #5C3317 ;
+}
+
+textarea,
+form.search input {
+    background: #FFF1DC ;
+    border-radius: 0.5em;
+    font-family: serif;
+}
+
+/* HEADING TEXT */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    font-variant: serif;
+    color: #5C3317 ;
+}
+
+/* FOOTER */
+
+#footer {
+    border-top: 5px solid #5C3317 ;
+}
+
+#footer.region {
+    background: #94a189 ;
+}
+
+#footer h4.heading {
+    color: #FFEBCD ;
+    font-variant: serif;
+    font-size: 120%;
+}
+
+#footer,
+#footer a {
+    color: #FFEBCD ;
+}
+
+#footer a:hover {
+    color: #FFEBCD ;
+    background: #5C3317 ;
+}
+
+/* COMMENTS */
+
+div.comment,
+li.comment {
+    border: 2px solid #5C3317 ;
+}
+
+.comment div.icon {
+    border: 2px solid #5C3317 ;
+}
+
+.comment h4.byline,
+.comment h4.byline a {
+    background: #5C3317 ;
+    color: #FFEBCD !important;
+}
+
+/* make the comments all have the same colour instead of every other comment being different */
+.thread .even {
+    background: #FFEBCD !important;
+}
+
+/* WORKS IN LIST */
+
+/* make the sections for fandoms, summary, and tags each have a maximum height and be scrollable if they exceed that height */
+
+h5.fandoms {
+    max-height: 10em;
+    overflow-y: auto;
+}
+
+.blurb ul.tags {
+    max-height: 18em;
+    overflow-y: auto;
+    padding: 0.375em;
+}
+
+blockquote.summary {
+    max-height: 28em;
+    overflow-y: auto;
+    padding: 0.375em;
+}
+
+/* background and border for each separate work in a page of them */
+
+li.blurb {
+    border: 2px solid #5C3317 ;
+    background: #FFF1DC ;
+    border-radius: 5px;
+}
+
+blockquote.summary,
+blockquote.userstuff {
+    color: #5C3317;
+}
+
+/* remove readerfic */
+
+.blurb:has(a[href*="*s*You/works"]),
+.blurb:has(a[href*="*s*Reader/works"]),
+.blurb:has(a[href*="/tags/Reader*s*"]),
+.blurb:has(a[href*="/tags/You*s*"]),
+.blurb:has(a[href*="*a*%20You/works"]),
+.blurb:has(a[href*="*a*%20Reader/works"]),
+.blurb:has(a[href*="/tags/Reader%20*a*"]),
+.blurb:has(a[href*="/tags/You%20*a*"]),
+.blurb:has(a[href*="/tags/Me%20*a*"]),
+.blurb:has(a[href*="*a*%20Me/works"]),
+.blurb:has(a[href*="/tags/Me*s*"]),
+.blurb:has(a[href*="*s*Me/works"]),
+.blurb:has(a[href*="%20x%20Reader/works"]),
+.blurb:has(a[href*="Reader%20x%20"]),
+.blurb:has(a[href*="/tags/Y*s*n%20x%20"]),
+.blurb:has(a[href*="%20x%20y*s*n/works"]),
+.blurb:has(a[href$="/tags/Reader-Insert/works"]),
+.blurb:has(a[href$="/tags/Y*s*n%20-%20Character/works"]),
+.blurb:has(a[href$="/tags/y*s*n/works"]),
+.blurb:has(a[href$="/tags/you%20-%20Freeform/works"]) {
+    display: none !important;
+}
+
+/* TAGS */
+
+/* formatting the section that all the tags of a work are in */
+
+.blurb .relationships {
+    background: none;
+}
+
+ul.tags {
+    padding-top: .5em;
+}
+
+ul.tags li.warnings,
+ul.tags li.relationships,
+ul.tags li.characters,
+ul.tags li.freeforms {
+    float: left !important;
+}
+
+li.warnings+li.relationships,
+li.relationships+li.characters,
+li.characters+li.freeforms,
+li.warnings+li.characters,
+li.warnings+li.freeforms,
+li.relationships+li.freeforms {
+    clear: left;
+}
+
+/* give labels to each tag type */
+
+ul.tags li.warnings:first-child:before {
+    content: "Archive Warnings: ";
+    color: #111;
+    font-weight: bold;
+}
+
+li.warnings+li.relationships:before {
+    content: "Relationships: ";
+    color: #111;
+    font-weight: bold;
+}
+
+li.relationships+li.characters:before {
+    content: "Characters: ";
+    color: #111;
+    font-weight: bold;
+}
+
+li.characters+li.freeforms:before {
+    content: "Freeform: ";
+    color: #111;
+    font-weight: bold;
+}
+
+li.warnings+li.characters:before {
+    content: "Characters: ";
+    color: #111;
+    font-weight: bold;
+}
+
+li.warnings+li.freeforms:before {
+    content: "Freeform: ";
+    color: #111;
+    font-weight: bold;
+}
+
+li.relationships+li.freeforms:before {
+    content: "Freeform: ";
+    color: #111;
+    font-weight: bold;
+}
+
+/* give all tags a border and a darker background, and remove the commas between them */
+
+a.tag,
+a.tag:visited,
+.favorite a.tag {
+    display: inline-block;
+    padding: 4px 7px;
+    margin: 4px 0px;
+    border: 2px solid #5C3317 ;
+    background: #EDD7B9 ;
+    border-radius: 5px;
+}
+
+a.tag {
+    color: #5C3317;
+}
+
+a.tag:visited {
+    color: #5A5A5A;
+}
+
+.commas li:after {
+    content: "";
+}
+
+.relationship a.tag,
+li.relationships a.tag {
+    background: #C9AE90 ;
+}
+
+h5.fandoms.heading {
+    background: #EDD7B9 !important ;
+    color: #5C3317 ;
+    border-radius: 5px;
+}
+
+/* WORK TEXT */
+
+/* make text width on works have a maximum width while not being too narrow on mobile, and change the font size and style and colour */
+#workskin {
+    max-width: 37em;
+    padding: 1.5em 2em;
+    margin: auto;
+    font-family: serif;
+    color: #5C3317 ;
+    line-height: 1.5;
+}
+
+/* fix font in beginning and end notes etc on a work */
+blockquote {
+    font-family: serif;
+}
+
+p.kudos {
+    color: #5C3317 !important;
+}
+
+/* in a user's profile page */
+
+dl.meta {
+    background: #FFEBCD ;
+    border: 2px solid #5C3317 ;
+    border-radius: 5px;
+}
+
+/* FORMS */
+
+fieldset {
+    border: 2px solid #5C3317 ;
+    border-radius: 5px;
+    background: #EDD7B9 ;
+}
+
+fieldset dl,
+fieldset fieldset {
+    background: #FFEBCD ;
+    color: #5C3317 !important;
+    font-variant: serif;
+    border: 2px solid #5C3317 ;
+    border-radius: 5px;
+    margin: 0.5em;
+}
+
+form.search input[type="text"] {
+    border-radius: 5px !important;
+}
+
+/* section titles and labels in forms */
+
+form.verbose legend,
+.verbose form legend {
+    background: #FFEBCD ;
+    border: 2px solid #5C3317 ;
+    color: #5C3317 ;
+    font-variant: serif;
+}
+
+label {
+    background: #EDD7B9 ;
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+form dt {
+    border-bottom: 1px solid #C9AE90;
+}
+
+.filters h4 {
+    padding: 0.3em;
+}
+
+.filters .expander {
+    border-radius: none !important;
+}
+
+/* help symbol */
+
+span.question {
+    background: #5C3317 ;
+    color: #FFEBCD ;
+    box-shadow: none;
+    border: 2px solid #5C3317 ;
+}
+
+/* drop-down menu options in forms */
+
+select {
+    background: #FFF1DC ;
+    border: 1px solid #5C3317 !important;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* fixing background on certain areas, eg making a bookmark */
+
+.toggled form{
+    background: #EDD7B9 ;
+}
+
+dl.index dd {
+    background: #FFEBCD;
+}
+
+/* LISTBOXES */
+
+.listbox,
+fieldset fieldset.listbox {
+    background: #5C3317 ;
+    box-shadow: none;
+    border-radius: 5px;
+    border: 2px solid #5C3317 ;
+}
+
+
+.listbox h3.heading,
+.listbox #main a,
+.listbox #main a:visited,
+.listbox h3 a,
+.listbox h3.heading a:visited {
+    color: #C9AE90;
+}
+
+listbox h4.heading a:visited {
+    color: #666;
+}
+
+.listbox .index {
+    background: #FFEBCD ;
+    box-shadow: #C9AE90 !important;
+}
+
+.media .listbox,
+.media-index .listbox {
+    border: 2px solid #5C3317 !important;
+}
+
+ol.index.group a {
+    color: #5C3317;
+}
+
+ol.index.group a:visited {
+    color: #5A5A5A;
+}
+
+/* keep large main areas of pages from being able to get too wide */
+
+div.user.pseud.home,
+div.user.home,
+div.tag.tagset,
+div#main.tags-search.region,
+div#main.works-search.region,
+div#main.bookmarks-search.region,
+div#main.people-search.region,
+div#main.works-index.region,
+div#main.collections-index.region,
+div#main.bookmarks-index.region,
+div#main.readings-index.dashboard.region,
+div#main.preferences-index.dashboard.region,
+div#main.subscriptions-index.dashboard.region,
+div#main.challenge_signups-index.dashboard.region,
+div#main.challenge_assignments-index.dashboard.region {
+    max-width: 60em;
+}
+
+div#main.works-index.filtered.region,
+div#main.collections-index.filtered.region,
+div#main.bookmarks-index.dashboard.filtered.region,
+div#main.works-index.dashboard.filtered.region {
+    max-width: 80em;
+}
+
+/* keep buttons on your user page low enough that they won't overlap with user icon on mobile */
+
+.home .header ul.navigation.actions {
+    margin-top: 3em;
+}
