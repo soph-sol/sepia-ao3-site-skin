@@ -9,13 +9,21 @@
     background: none;
 }
 
-/* POPUP DIALOGUE BOXES */
+/* POPUP DIALOGUE BOXES, eg the share work popup */
 
 #modal {
-    border: 5px solid #5C3317 ;
+    border: 5px #5C3317 ;
     background: #FFEBCD ;
     color: #76826c ;
-        /* what's this for, tell me more, I can't recall how to get a dialogue box to happen to me so I can see what it does */
+    border-radius: 5px;
+}
+
+#modal .content {
+    border-bottom: none;
+}
+
+div#share ul {
+    display: none;
 }
 
 #modal .footer .action.modal-closer {
@@ -33,6 +41,7 @@
 .thread .even,
 .statistics .index li:nth-of-type(2n) {
     background: #94a189 ;
+    border-radius: 5px;
 }
 
 span.unread {
@@ -130,6 +139,7 @@ a.tag:hover {
     display: none;
 }
 
+
 #header a {
     font-size: 110%;
 }
@@ -172,6 +182,13 @@ a.tag:hover {
     font-family: serif;
 }
 
+/* menu for downloading works */ 
+ul.expandable.secondary {
+    background: #94a189;
+    border: none;
+    border-radius: 5px;
+}
+
 /* page wrapper - the background background of pages */
 
 #outer.wrapper {
@@ -194,6 +211,9 @@ ul.notes,
     background: #94a189 ;
     border: #94a189 ;
     color: #111;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 /* DASHBOARD */
@@ -232,6 +252,7 @@ ul.notes,
 /* dashboard decoration */
 
 #dashboard.own,
+#dashboard,
 #dashboard ul {
     background: #EDD7B9 ;
     border-radius: 5px;
@@ -241,8 +262,10 @@ ul.notes,
     border: none;
 }
 
-#dashboard.own {
+#dashboard.own,
+#dashboard {
     border: 2px solid #5C3317 ;
+    margin-left: 14px;
 }
 
 /* BUTTONS */
@@ -284,6 +307,7 @@ input {
     font-family: serif;
     padding: 5px;
     background: #FFF1DC ;
+    border-radius: 5px;
 }
 
 /* if you're hovering over a button link, it'll look like this instead of the standard */
@@ -304,6 +328,7 @@ form.search input {
     background: #FFF1DC ;
     border-radius: 0.5em;
     font-family: serif;
+    margin-top: 5px;
 }
 
 /* HEADING TEXT */
@@ -350,6 +375,7 @@ h6,
 div.comment,
 li.comment {
     border: 2px solid #5C3317 ;
+    border-radius: 5px;
 }
 
 .comment div.icon {
@@ -360,6 +386,11 @@ li.comment {
 .comment h4.byline a {
     background: #5C3317 ;
     color: #FFEBCD !important;
+}
+
+img.icon,
+div.icon {
+    border-radius: 5px;
 }
 
 /* make the comments all have the same colour instead of every other comment being different */
@@ -425,6 +456,17 @@ blockquote.userstuff {
 .blurb:has(a[href$="/tags/you%20-%20Freeform/works"]) {
     display: none !important;
 }
+
+/* title and author link colours */
+
+h4.heading a {
+    color: #990000 !important;
+}
+
+h4.heading a:visited {
+    color: #5A5A5A !important;
+}
+
 
 /* TAGS */
 
@@ -526,7 +568,7 @@ a.tag:visited {
 .relationship a.tag,
 li.relationships a.tag {
     background: #C9AE90 ;
-}
+}s
 
 h5.fandoms.heading {
     background: #EDD7B9 !important ;
@@ -563,6 +605,12 @@ dl.meta {
     border-radius: 5px;
 }
 
+table,
+th {
+    background: #EDD7B9;
+    border: solid #5C3317;
+}
+
 /* FORMS */
 
 fieldset {
@@ -585,14 +633,22 @@ form.search input[type="text"] {
     border-radius: 5px !important;
 }
 
+form dl {
+    background: #EDD7B9;
+    border: #5C3317;
+    border-radius: 5px;
+}
+
 /* section titles and labels in forms */
 
 form.verbose legend,
-.verbose form legend {
+.verbose form legend,
+.dynamic form {
     background: #FFEBCD ;
     border: 2px solid #5C3317 ;
     color: #5C3317 ;
     font-variant: serif;
+    border-radius: 5px;
 }
 
 label {
@@ -653,10 +709,12 @@ fieldset fieldset.listbox {
 
 
 .listbox h3.heading,
+.listbox h4.heading,
 .listbox #main a,
 .listbox #main a:visited,
 .listbox h3 a,
-.listbox h3.heading a:visited {
+.listbox h3.heading a:visited,
+.listbox h5.heading {
     color: #C9AE90;
 }
 
@@ -713,4 +771,38 @@ div#main.works-index.dashboard.filtered.region {
 
 .home .header ul.navigation.actions {
     margin-top: 3em;
+}
+
+/* bookmarks */
+
+.bookmark .user {
+    border: none;
+    background: #94a189;
+    border-radius: 5px;
+}
+
+div#bookmark-form.post.bookmark {
+    background: #FFF1DC
+}
+
+/* history */
+
+.reading h4.viewed {
+    background: #94a189;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+/* related works */
+
+dt.child,
+dt.parent {
+    background: #EDD7B9;
+    border-radius: 5px;
+}
+
+/* skins */
+
+.picture .header {
+    border-bottom: 1px solid #EDD7B9;
 }
