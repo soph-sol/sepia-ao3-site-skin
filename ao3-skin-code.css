@@ -216,6 +216,11 @@ ul.notes,
     margin: 5px;
 }
 
+/*remove the notice that you have any users muted in the archive, thanks to tumblr user ao3commentoftheday*/
+p.muted.notice {
+display: none;
+}
+
 /* DASHBOARD */
 /* this is the set of menus on the left-hand side of the screen when you're on your user page */
 
