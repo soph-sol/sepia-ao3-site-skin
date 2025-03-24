@@ -586,7 +586,7 @@ h5.fandoms.heading {
 /* make text width on works have a maximum width while not being too narrow on mobile, and change the font size and style and colour */
 #workskin {
     max-width: 30em;
-    padding: 1.5em 2em;
+    padding: 1.5em 0.8em;
     margin: auto;
     font-family: serif;
     color: #5C3317 ;
